@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "My Qiita:Team Today",
+  "description": "Copy links to posts posted to Qiita:team today.",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_title": "My Qiita:Team Today",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "clipboardWrite",
+    "storage",
+    "https://*.qiita.com/*"
+  ],
+  "options_page": "options.html"
+}

@@ -1,0 +1,28 @@
+<html>
+<head>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <script src="jquery.js"></script>
+  <script src="options.js"></script>
+  <style>
+body {
+  padding: 15px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-group">
+      <label for="team">team: https://<em>ここの文字列</em>.qiita.com/</label>
+      <input id="team" name="team" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <label for="token">token: <a href="http://qiita.com/settings/applications">ユーザの管理画面</a>から新しく個人用アクセストークンを発行し、read_qiita_teamのスコープを与えてください。</label>
+      <input id="token" name="token" class="form-control" type="text">
+    </div>
+    <div style="margin-bottom: 15px;">
+      <button class="btn btn-primary" id="save">save</button>
+    </div>
+    <div class="alert alert-success" style="display: none;" role="alert">保存しました</div>
+  </div>
+</body>
+</html>

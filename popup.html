@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+    <style>
+body{
+  width: 400px;
+  padding: 10px;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+    </style>
+  </head>
+  <body>
+    <div id="nooptions" style="display: none;">チームとトークンを設定してください。</div>
+    <div id="loading">読み込み中...</div>
+    <div id="nopost" style="display: none;">
+      投稿がありません。
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <a class="btn btn-default"  id="yesterday">昨日</a>
+        <a class="btn btn-default" id="day-before-yesterday">おととい</a>
+      </div>
+    </div>
+    <div id="copied" style="display: none;">
+      <h1><span id="date"></span>の記事をコピーしました</h1>
+      <h2>コピーした記事(最新20記事まで)</h2>
+      <ul>
+      </ul>
+    </div>
+    <textarea id="links" style="display: none; height: 0;"></textarea>
+  </body>
+</html>
