@@ -7,7 +7,8 @@
 
   "browser_action": {
     "default_title": "My Qiita:Team Today",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon38.png"
   },
   "permissions": [
     "clipboardWrite",
